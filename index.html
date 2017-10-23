@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>For a Few Billion</title>
+</head>
+<body>
+    <h1>For A few Billion</h1>
+
+    <script>
+
+        var num= 0.01;
+        function reward(num, days){
+            for(var i=1; i<days; i++){
+                num=num*2;
+            }
+            console.log("After", days, "days, the servant would have ",num, "dollars.");
+        }
+
+        reward(num, 30);
+
+        function until10k(num){
+            count=1;
+            while(num<=10000){
+                num=num*2;
+                count++;
+            }
+            console.log("After", count, "days, the servant would have", num, "dollars.");
+        }
+
+        until10k(num);
+
+        function untilBil(num){
+            count=1;
+            while(num<=1000000000){
+                num=num*2;
+                count++;
+            }
+            console.log("After", count, "days, the servant would have", num, "dollars.");
+        }
+
+        untilBil(num);
+
+
+    </script>
+
+</body>
+</html>
